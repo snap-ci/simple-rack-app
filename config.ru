@@ -3,15 +3,15 @@ require 'bundler/setup'
 require 'sinatra/base'
 
 class MirrorListServer < Sinatra::Base
-  LOCAL_MIRROR = '10.12.6.22'
+  LOCAL_MIRROR = 'snapci_repo.thoughtworks.com'
 
   CENTOS_MIRRORS = %W(
-    http://#{LOCAL_MIRROR}:4567/CentOS
+    http://#{LOCAL_MIRROR}/CentOS
     http://ftp.jaist.ac.jp/pub/Linux/CentOS
   )
 
   EPEL_MIRRORS = %W(
-    http://#{LOCAL_MIRROR}:4567/epel
+    http://#{LOCAL_MIRROR}/epel
     http://ftp.jaist.ac.jp/pub/Linux/Fedora/epel
   )
 
