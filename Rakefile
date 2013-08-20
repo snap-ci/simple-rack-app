@@ -5,3 +5,9 @@ task :test do
     sleep 1
   end
 end
+
+namespace :db do
+  %w(drop create migrate test:prepare).each do |t|
+    task t
+  end
+end
