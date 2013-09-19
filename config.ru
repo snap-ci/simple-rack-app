@@ -17,10 +17,12 @@ class MirrorListServer < Sinatra::Base
 
   OPENVZ_UTILS_MIRRORS = %W(
     http://download.openvz.org/current/
+    http://snapci_repo.thoughtworks.com/openvz-utils/
   )
 
   OPENVZ_KERNEL_MIRRORS = %W(
     http://download.openvz.org/kernel/branches/rhel6-2.6.32/current/
+    http://snapci_repo.thoughtworks.com/openvz-kernel-rhel6/
   )
 
   set :public_folder, File.expand_path('..', __FILE__)
