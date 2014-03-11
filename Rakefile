@@ -1,5 +1,5 @@
 namespace :test do
-  task :test do
+  task :units do
     puts "Running tests"
     (1..10).each do |i|
       puts "."
@@ -7,7 +7,7 @@ namespace :test do
     end
   end
 
-  task :test do
+  task :functionals do
     puts "Running tests"
     (1..10).each do |i|
       puts "."
