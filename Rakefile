@@ -1,8 +1,18 @@
-task :test do
-  puts "Running tests"
-  (1..10).each do |i|
-    puts "."
-    sleep 0.5
+namespace :test do
+  task :test do
+    puts "Running tests"
+    (1..10).each do |i|
+      puts "."
+      sleep 0.5
+    end
+  end
+
+  task :test do
+    puts "Running tests"
+    (1..10).each do |i|
+      puts "."
+      sleep 0.5
+    end
   end
 end
 
